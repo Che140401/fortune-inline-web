@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    img{display: block;max-width: 100%;}
+    .clear {
+    content: "";
+    display: block;
+    clear: both;
+}
+</style>
+<body>
+    <section class="property-dtl-sec" style="padding: 20px 0;border-bottom: 1px solid #D2D2D2;">
+        <div class="container" style="max-width:1200px;width: 90%;margin: 0 auto;position: relative;">
+          <!-- .property-top-box.clear -->
+          <!-- .pro-amt -->
+          <!-- %p -->
+          <!-- %i.rupee ` -->
+          <!-- - if @property.transaction_type == 'Sale' -->
+          <!-- = comma_sep(@property.price_per_sq_ft.to_i * @property.builtup_size.to_i) -->
+          <!-- - else -->
+          <!-- = comma_sep(@property.rent) -->
+          <!-- .flat-info -->
+          <!-- - if allowCommercial -->
+          <!-- %p.flat-area -->
+          <!-- = "Commercial Office Space #{@property.builtup_size.to_s} #{@property.builtup_uniq.to_s}" -->
+          <!-- %p.float-loc -->
+          <!-- = "For #{@property.transaction_type.to_s} in #{@property.sub_locality.to_s + ', ' + @property.locality.name.to_s + ', ' + @property.city.name.to_s}" -->
+          <!-- - else -->
+          <!-- %p.flat-area -->
+          <!-- - if @property.bedrooms.to_s == "0" -->
+          <!-- = "1 RK #{@property.builtup_size.to_s} #{@property.builtup_uniq.to_s} #{@property.flat_type.to_s}" -->
+          <!-- - else -->
+          <!-- = "#{@property.bedrooms.to_s} BHK #{@property.builtup_size.to_s} #{@property.builtup_uniq.to_s} #{@property.flat_type.to_s}" -->
+          <!-- %p.float-loc -->
+          <!-- = "For #{@property.transaction_type.to_s} #{@property.sub_locality.to_s.capitalize() + ', ' + @property.locality.name.to_s.capitalize() + ', ' + @property.city.name.to_s.capitalize()}" -->
+          <!-- .btn-wrap -->
+          <!-- %button.btn{:onclick => "$('.overlay').show();$('.project-enquiry-popup').addClass('active');"} Contact Owner -->
+          <!-- - if @property.mobile.present? -->
+          <!-- %a.btn{:href => "tel:#{@property.mobile}"} -->
+          <!-- %i.fa.fa-phone -->
+          <!-- Call Now -->
+          <!-- - if !false -->
+          <!-- %a.btn{:href => property_detail_path(seo_name: @property.seo_name, :format => :pdf)} -->
+          <!-- %i.fa.fa-download -->
+          <!-- Download Brochure -->
+          <div class="prop-overview">
+            <div class="prop-img-box" style="float: left;padding-right: 30px;display: block;width: 45%;">
+              <div class="prop-img1" style="    width: 100%;">
+                <a class="fancybox" href="https://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listing_images/632/original/2.jpg?1674010995" rel="gallery">
+                  <img alt="Commercial Office Space 450 Sqft for Rent in Sector 11, CBD Belapur, Navi Mumbai" src="demo-1.jpg" style="width: 100%;display: block;border-radius: 5px;">
+                </a>
+              </div><div class="prop-img2" style="width: 100%;display: grid;grid-template-columns: 1fr 1fr;margin-top:20px;gap:20px">
+                <a class="fancybox img-item" href="https://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listing_images/632/original/2.jpg?1674010995" rel="gallery">
+                  <img alt="Commercial Office Space 450 Sqft for Rent in Sector 11, CBD Belapur, Navi Mumbai" class="img-item" src="demo-1.jpg" style="width: 100%;display: block;border-radius: 5px;">
+                </a>
+                <a class="fancybox img-item" href="https://s3.amazonaws.com/adroitarthttps://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listinhttps://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listinhttps://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listing_images/632/original/2.jpg?1674010995https://s3.amazonaws.com/adroitart/fortune_series/photos/blog_listing_images/632/original/2.jpg?1674010995g_images/632/original/2.jpg?1674010995g_images/632/original/2.jpg?1674010995/fortune_series/photos/blog_listing_images/633/original/1.jpg?1674010995" rel="gallery">
+                  <img alt="Commercial Office Space 450 Sqft for Rent in Sector 11, CBD Belapur, Navi Mumbai" class="img-item" src="demo-2.jpg" style="width: 100%;display: block;border-radius: 5px;">
+                </a>
+              </div>
+            </div>
+            <div class="prop-info-box" style="    float: left;    padding-right: 0px;    width: 50%;">
+              <div class="property-top-box clear" style="    padding-bottom: 20px;">
+                <div class="pro-amt" style="color: #081d54;font-size: 22px;font-family:'robotobold';display: inline-block;vertical-align: middle;text-align: left;line-height: 50px;">
+                  <p class="flat-area" style="    line-height: 20px;">
+                    Commercial Office Space 450 Sqft
+                    <i class="rupee" style="    color: #081d54;font-family: 'robotobold';display: block;    line-height: 40px;">
+                      ₹ 30,000
+                    </i>
+                  </p>
+                  <p class="float-loc" style="    font-family: 'robotoregular';font-size: 14px;color: #686868;padding-top: 10px;">
+                    For Rent in Sector 11, CBD Belapur, Navi Mumbai
+                  </p>
+                </div>
+              </div>
+              <div class="sub-head-box" style="background: #088e85;color: #fff;padding: 14px 30px;border-radius: 5px;display: block;font-size: 14px;font-family: 'robotomedium';">Property Information</div>
+              <div class="pi-grp-row" style="display: grid;margin-top: 15px;grid-template-columns: 1fr 1fr;grid-column-gap: 15px;">
+                <div class="pi-grp" style="padding: 20px 0;border-bottom: 1px solid #D2D2D2;">
+                  <label class="selc-title" style="    color: #686868;
+                  font-size: 14px;
+                  font-weight: 400;">Property Type</label>
+                  <p class="selc-value" style="    color: #272424;
+                  margin-top: 5px;
+                  font-size: 14px;
+                  font-weight: 600;line-height: 20px;">Commercial</p>
+                </div>
+                <div class="pi-grp" style="padding: 20px 0;border-bottom: 1px solid #D2D2D2;">
+                  <label class="selc-title" style="    color: #686868;
+                  font-size: 14px;
+                  font-weight: 400;">Building Type</label>
+                  <p class="selc-value" style="    color: #272424;
+                  margin-top: 5px;
+                  font-size: 14px;
+                  font-weight: 600;line-height: 20px;">Space</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <!-- prop-overview close -->
+          <div class="fixed-section" style="    position: relative;padding-top: 70px;">
+            <div class="sub-head-box" style="background: #088e85;color: #fff;padding: 14px 30px;border-radius: 5px;display: block;font-size: 14px;font-family: 'robotomedium';">Description</div>
+            <div class="prop-overview" style="    padding: 20px 0;
+            border-bottom: 1px solid #D2D2D2;">
+              <div class="list-grp" id="description">
+                <div class="desc-list" style="    display: grid;grid-template-columns: 1fr 1fr;grid-column-gap: 30px;">
+                  <p style="    border-bottom: 1px dashed #eaeaea;
+                  width: 100%;
+                  padding: 15px 0;font-size: 14px;line-height: 20px;">
+                    <label style="display: inline-block;
+                    vertical-align: top;
+                    width: 160px;
+                    color: #686868;">Price per sq.ft</label>
+                    <span style="display: inline-block;
+                    vertical-align: top;font-family: 'robotobold';    width: calc(100% - 164px);font-size: 14px;">0 /-</span>
+                  </p>
+                  <p style="    border-bottom: 1px dashed #eaeaea;
+                  width: 100%;
+                  padding: 15px 0;font-size: 14px;line-height: 20px;">
+                    <label style="display: inline-block;
+                    vertical-align: top;
+                    width: 160px;
+                    color: #686868;">Booking Amount</label>
+                    <span style="display: inline-block;
+                    vertical-align: top;font-family: 'robotobold';    width: calc(100% - 164px);font-size: 14px;"> - Zero Rupee</span>
+                  </p>
+                </div>
+              </div>
+              <div class="list-grp" id="amenities" style="margin-top:50px !important">
+                <div class="sub-head-box" style="background: #088e85;color: #fff;padding: 14px 30px;border-radius: 5px;display: block;font-size: 14px;font-family: 'robotomedium';">AMENITIES</div>
+                <div class="desc-list mt-25 amenities-innbox" style="    display: grid;grid-template-columns: 1fr 1fr 1fr;    grid-column-gap: 30px;margin-top:25px">
+                  <p style="    display: inline-flex;
+                  align-items: center;
+                  gap: 32px;    border-bottom: 1px dashed #eaeaea;width: 100%;padding: 15px 0;font-size: 14px;">
+                    <img alt="Security" src="logo.png" style="    width: 45px;
+                    height: 45px;">
+                    Security
+                  </p>
+                  <p style="    display: inline-flex;
+                  align-items: center;
+                  gap: 32px;    border-bottom: 1px dashed #eaeaea;width: 100%;padding: 15px 0;font-size: 14px;">
+                    <img alt="Security" src="logo.png" style="    width: 45px;
+                    height: 45px;">
+                    Security
+                  </p>
+                  <p style="    display: inline-flex;
+                  align-items: center;
+                  gap: 32px;    border-bottom: 1px dashed #eaeaea;width: 100%;padding: 15px 0;font-size: 14px;">
+                    <img alt="Security" src="logo.png" style="    width: 45px;
+                    height: 45px;">
+                    Security
+                  </p>
+                </div>
+              </div>
+              <div class="list-grp mt-50" id="nearby" style="margin-top: 50px !important;">
+                <div class="sub-head-box" style="background: #088e85;
+                color: #fff;
+                padding: 14px 30px;
+                border-radius: 5px;
+                display: block;
+                font-size: 14px;
+                font-family: 'robotomedium';">NEAR-BY</div>
+                <div class="desc-list mt-25" style="    display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;margin-top: 25px;">
+                  <p style="    border-bottom: 1px dashed #eaeaea;
+                  width: 100%;
+                  padding: 15px 0;    font-size: 14px;    line-height: 20px;">
+                    <label style="    display: inline-block;
+                    vertical-align: top;
+                    width: 160px;
+                    color: #686868;">Railway Station</label>
+                    <span style="    display: inline-block;
+                    vertical-align: top;    width: calc(100% - 164px);    font-size: 14px;    font-family: 'robotobold';">CBD Belapur Railway Station  - 0 to 1km</span>
+                  </p>
+                  <p style="    border-bottom: 1px dashed #eaeaea;
+                  width: 100%;
+                  padding: 15px 0;    font-size: 14px;    line-height: 20px;">
+                    <label style="    display: inline-block;
+                    vertical-align: top;
+                    width: 160px;
+                    color: #686868;">Railway Station</label>
+                    <span style="    display: inline-block;
+                    vertical-align: top;    width: calc(100% - 164px);    font-size: 14px;    font-family: 'robotobold';">CBD Belapur Railway Station  - 0 to 1km</span>
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
